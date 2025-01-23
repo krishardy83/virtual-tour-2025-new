@@ -1,0 +1,289 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Tour - Messiah University</title>
+  <meta name="robots" content="index,follow">
+
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- Place favicon.ico in the root directory -->
+  <!-- Repo test - Delete -->
+  <!-- importing font-packs -->
+  <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/72d06cb8-0c8f-4fd7-b671-80f4e1989ebc.css"/>
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css?v=17">
+  <!-- <link rel="stylesheet" href="styles/main.min.css?v=17"> -->
+  <!-- endbuild -->
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WP6HFB3');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!--
+  <style>
+  #mainSidebarWrapper{
+    display: none!important;
+  }
+  </style>
+  <h2 style="z-index: 100; text-align:center; margin-top: 50px">The virtual tour is currently down. Please check back soon. </h2>
+-->
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WP6HFB3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<!-- Right Side Drawer -->
+<div id="infoDrawer" class="sidebarWrapper" style="display: none" >
+  <div id="infoDrawerContent" ></div>
+  <div id="infoSidebarToggle" class="sidebarToggle">
+    <span class="icon-doublearrow-left"></span>
+  </div>
+</div>
+<!-- End Right Side Drawer -->
+
+<!-- Main part of the site -->
+<div id="main">
+
+  <!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div id="map" class="mapContainer"></div>
+  <iframe id="thisTour" class="tourContainer" title="Tour"></iframe>
+  <iframe id="previousTour" class="tourContainer" title="Tour"></iframe>
+  <iframe id="nextTour" class="tourContainer" title="Tour"></iframe>
+  <div id="loadingTour" class="tourContainer" title="Tour">Loading...</div>
+  <div id="coords" style="background-color: white"></div>
+  <div id="small-info-window"></div>
+  <div id="calls-to-action">
+    <a id="request-info"
+       class="call-to-action" href="https://www.messiah.edu/homepage/1553/request_information"
+       target="_blank" >Request Info</a>
+    <a id="visit-campus"
+       class="call-to-action" href="https://www.messiah.edu/visit"
+       target="_blank" >Visit Campus</a>
+  </div>
+
+  <div id="announcement-back">
+    <div id="announcement-window">
+      <div class="toolTip">
+          <span onclick="" class="announcement-close announcement-close-button"><i class="icon-x-btn"></i></span>
+        <div>
+          <p id="announcement-title"></p>
+          <p id="announcement-description" class="toolTip__content"></p>
+          <p class="text-center tooltip__toolBar">
+            <a id="announcement-button" class="announcement-close btn toolTip__btn">View the campus map</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mainSidebarWrapper" class="sidebarWrapper">
+
+    <header class="mainHeader">
+      <div class="top-margin"></div>
+      <div class="mainLogo">
+        <img src="https://www.messiah.edu/site/styles/images/logo-dark.svg" alt="Messiah University Virtual Tour">
+
+        <div class="mobileControls">
+          <span class="toggleTourList glyphicon glyphicon-menu-hamburger"></span>
+        </div>
+      </div>
+
+      <div id="filterListSection">
+        <div id="filterListToggle" onclick="toggleFilterList()">
+          <div>Filter list</div>
+          <div class="icon"></div>
+        </div>
+        <div class="mainFilterList">
+      </div>
+      </div>
+    </header>
+
+    <div class="tabsContainer">
+
+      <!-- Tab panes -->
+      <div id="mainSidebarTabContent" class="tab-content tabContent">
+        <div class="tours toursList">
+        </div>
+      </div>
+    </div>
+
+    <div id="mainSidebarToggle" class="sidebarToggle">
+      <span class="icon-doublearrow-left"></span>
+    </div>
+  </div>
+  <div id="backToInfoButton">Back to Info</div>
+</div>
+
+<script id="mySlidesTemplate" type="text/x-jQuery-tmpl">
+  <div>
+    {{each images}}
+      <div class="mySlides">
+            <img src="${$value.url}" style="width:100%">
+      </div>
+    {{/each}}
+  <div>
+</script>
+
+<script id="columnsTemplate" type="text/x-jQuery-tmpl">
+  <div>
+    {{each images}}
+      <div class="column">
+         <img class="demo" src="${$value.url}" onclick="currentSlide(${$value.num})">
+      </div>
+    {{/each}}
+  <div>
+</script>
+
+<script id="filterEntryTemplate" type="text/x-jQuery-tmpl">
+    <div class="categoryFilter">
+      <input type="checkbox" id="${id}" name="${id}" value="${id}" class="filterCheckbox" ${checked}>
+      <label for="${id}">${name}</label>
+    </div>
+</script>
+
+<script id="tourEntryTemplate" type="text/x-jQuery-tmpl">
+    <div class="location-entry" data-id="${stopNo}" >
+      <div class="marker location-entry-icon">${stopNo}</div>
+      <div class="location-entry-texts">
+        <div class="sightName">${name}</div>
+        <div class="catName">${categoryName}</div>
+      </div>
+    </div>
+</script>
+
+<script id="tourTemplate" type="text/x-jQuery-tmpl">
+  <li>
+    <a class="fancybox-media" href="${read_more_link}"><img src="http://www.messiah.edu/images/${image_1_required}" width="100%"></a>
+    <p><strong>${entry_title}</strong></p>
+    <p>${description}</p>
+    <a class="fancybox-media" href="${read_more_link}"><span class="marker icon-chevronright"></span></a>
+  </li>
+</script>
+
+<script id="locationInfoTemplate" type="text/x-jQuery-tmpl">
+  <div class="toolTip">
+    <div class="infoDrawerWrapper">
+      <div class="infoDrawerWrapperContent">
+        <header class="mainHeaderStop">
+        </header>
+        {{if banner}}
+          <div class="infoDrawerBanner">
+            <div class="infoBannerContent">
+              <img class="toolTip__image" src="${banner}">
+            </div>
+          </div>
+        {{else}}
+          <div></div>
+        {{/if}}
+        <div class="viewTourButton">
+          View Tour <img src="images\right-btn.svg" />
+        </div>
+        <div class="infoDrawerTextAndButtons" >
+          <div class="toolTip__header">
+            <!-- <span class="marker-small  marker ${icon}"></span> -->
+            {{if isHighlight}}
+              <div class="stop">Stop ${stopNo}</div>
+              <div class="highlight">Stop Highlight</div>
+            {{else}}
+              <div class="stop">Stop ${stopNo}</div>
+            {{/if}}
+            <div>${name}</div>
+          </div>
+
+          <div class="toolTip__content">
+            <div id="locationInfoDescription">${description}</div>
+
+            <div id="buildingHighlights"></div>
+            {{if isHighlight}}
+              <div class="returnToStopButton" onClick="openStop(locations[${stopNo}])">
+                RETURN TO STOP HOME
+              </div>
+              {{else}}
+              <div></div>
+            {{/if}}
+          </div>
+
+          <div class="locationButtons">
+          </div>
+        </div>
+      </div>
+      <div class="menuOptions">
+        <div class="prevNextButton{{if hasPrevLocation}} enabled{{/if}}"
+            {{if hasPrevLocation}}onclick="openStop(locations[${prevLocationStop}], ${prevLocationHighlight}, null, navButton.previous)"{{/if}}>
+          <div class="menuOptionText">
+            <img src="images\left-btn.svg" />
+          </div>
+        </div>
+        <div class="menuOptionContainer" onclick="openMap(true)">
+          <div class="menuOptionText">
+            <img src="images\home-btn.svg" />
+          </div>
+        </div>
+        <div class="prevNextButton{{if hasNextLocation}} enabled{{/if}}"
+            {{if hasNextLocation}}onclick="openStop(locations[${nextLocationStop}], ${nextLocationHighlight}, null, navButton.next)"{{/if}}>
+          <div class="menuOptionText">
+            <img src="images\right-btn.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script id="buildingHighlightsTemplate" type="text/x-jQuery-tmpl">
+  <div>
+    <div class="title">Stop Highlights</div>
+    <div class="entries">
+    {{each highlights}}
+        <div onClick="openStop(locations[${$value.stopNo}], ${$index})" class="buildingHighlight">${$value.name}</div>
+    {{/each}}
+    </div>
+  </div>
+</script>
+
+<!-- jQuery -->
+<!-- Old version <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- jQuery UI -->
+<!-- Old version <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+<!-- jQuery Templates -->
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+
+<!-- jQuery MMenu -->
+<link rel="stylesheet" type="text/css" href="styles/mmenu.css">
+<script src="scripts/mmenu/mmenu.polyfills.js"></script>
+<script src="scripts/mmenu/mmenu.js"></script>
+
+
+<script type="text/javascript" src="scripts/main.js"></script>
+<!-- <script type="text/javascript" src="scripts/main.min.js"></script> -->
+
+<!-- Google Maps -->
+<!-- <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDuK03Xp4KZdkHVHnsuV0Q46uVR5W7ECcU&callback=initMap"></script>
+
+<!--- fancybox -->
+<link rel="stylesheet" type="text/css" href="lib/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript" src="lib/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="lib/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+</body>
+</html>

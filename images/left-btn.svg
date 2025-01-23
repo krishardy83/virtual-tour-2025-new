@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="24px" viewBox="0 0 15 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Virtual-Tour---Self-Guided" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Larson-Copy-2" transform="translate(-56.000000, -900.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Stop-Nav" transform="translate(0.000000, 886.000000)">
+                <g id="iconmonstr-arrow-25" transform="translate(56.000000, 14.000000)">
+                    <polygon id="Path" transform="translate(7.500000, 12.000000) scale(-1, 1) translate(-7.500000, -12.000000) " points="0 3 3.057 0 15 12 3.057 24 0 21 9 12"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

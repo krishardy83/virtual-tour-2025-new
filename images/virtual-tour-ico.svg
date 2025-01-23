@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="23px" viewBox="0 0 29 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Virtual Tour icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0007 0.6912 28.142 0.6912 28.142 23 0.0007 23"></polygon>
+    </defs>
+    <g id="Option-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-icon-click" transform="translate(-1132.000000, -643.000000)">
+            <g id="Virtual-tour-button" transform="translate(1094.000000, 626.000000)">
+                <g id="Virtual-Tour-icon" transform="translate(38.000000, 16.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 0.308900)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M14.3197,19.9602 C10.4867,19.9602 7.3797,16.8532 7.3797,13.0202 C7.3797,9.1872 10.4867,6.0792 14.3197,6.0792 C18.1527,6.0792 21.2597,9.1872 21.2597,13.0202 C21.2597,16.8532 18.1527,19.9602 14.3197,19.9602 M25.8797,6.1712 L23.8727,6.1712 C23.7677,3.1402 21.2627,0.6912 18.2077,0.6912 L9.9347,0.6912 C6.8797,0.6912 4.3747,3.1402 4.2697,6.1712 L2.2627,6.1712 C1.0127,6.1712 0.0007,7.1842 0.0007,8.4342 L0.0007,20.7372 C0.0007,21.9872 1.0127,23.0002 2.2627,23.0002 L25.8797,23.0002 C27.1297,23.0002 28.1427,21.9872 28.1427,20.7372 L28.1427,8.4342 C28.1427,7.1842 27.1297,6.1712 25.8797,6.1712" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M14.3197,9.9542 C12.4567,9.9542 10.9457,11.4652 10.9457,13.3292 C10.9457,15.1922 12.4567,16.7032 14.3197,16.7032 C16.1837,16.7032 17.6947,15.1922 17.6947,13.3292 C17.6947,11.4652 16.1837,9.9542 14.3197,9.9542" id="Fill-4" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

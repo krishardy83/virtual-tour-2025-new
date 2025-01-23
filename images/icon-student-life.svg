@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>student-life-ico</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Closed-Menu" transform="translate(-13.000000, -913.000000)">
+            <g id="A-side">
+                <g id="Locations-section" transform="translate(0.000000, 473.000000)">
+                    <g id="student-life-ico" transform="translate(13.000000, 440.000000)">
+                        <circle id="student-life-icon" fill="#004B85" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <g id="20_3017-icon-student-life" transform="translate(8.000000, 5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M0.71,17.77 C0.394950234,18.4377211 0.218077287,19.1622199 0.19,19.9 C0.190491181,20.4080804 0.247508571,20.9145289 0.36,21.41 L18.66,21.31 C18.7603363,20.8467257 18.8106247,20.3740148 18.8100057,19.9 C18.8092787,19.2662289 18.6764536,18.639567 18.42,18.06 C17.6632564,16.1955378 16.3900481,14.585814 14.75,13.42 C14.4103809,13.2234776 14.0598095,13.0465225 13.7,12.89 L13.4,12.77 C12.0322153,12.4574047 10.6330333,12.3030584 9.23,12.31 C8.0522124,12.2587671 6.87384673,12.3971997 5.74,12.72 L5.34,12.88 C4.92304843,13.0551133 4.5187449,13.2589358 4.13,13.49 C2.57652294,14.5305159 1.38214126,16.0252392 0.71,17.77 L0.71,17.77 Z" id="Path"></path>
+                            <circle id="Oval" cx="9.5" cy="4.91" r="4.65"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

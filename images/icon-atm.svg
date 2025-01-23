@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="36px" viewBox="0 0 35 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>atm-ico</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Closed-Menu" transform="translate(-13.000000, -599.000000)">
+            <g id="A-side">
+                <g id="Locations-section" transform="translate(0.000000, 473.000000)">
+                    <g id="atm-ico" transform="translate(13.000000, 126.000000)">
+                        <circle id="ATM-icon" fill="#004B85" cx="17.5" cy="18.5" r="17.5"></circle>
+                        <g id="20_3017-icon-ATM-locations" transform="translate(9.000000, 0.000000)" fill="#FFFFFF" font-family="Helvetica" font-size="29" font-weight="normal">
+                            <text id="$">
+                                <tspan x="0.08" y="28.08">$</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="30px" viewBox="0 0 22 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Directions icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0005 0 21.3775 0 21.3775 29.9769 0.0005 29.9769"></polygon>
+    </defs>
+    <g id="Option-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-icon-click" transform="translate(-908.000000, -639.000000)">
+            <g id="Directions-button" transform="translate(863.000000, 626.000000)">
+                <g id="Directions-icon" transform="translate(45.000000, 13.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M10.9575,14.315 C8.4905,14.315 6.4905,12.315 6.4905,9.848 C6.4905,7.381 8.4905,5.381 10.9575,5.381 C13.4245,5.381 15.4245,7.381 15.4245,9.848 C15.4245,12.315 13.4245,14.315 10.9575,14.315 M21.3775,10.689 C21.3775,4.786 16.5925,0 10.6885,0 C4.7855,0 0.0005,4.786 0.0005,10.689 C0.0005,12.244 0.3395,13.717 0.9365,15.05 L0.9305,15.05 L0.9515,15.083 C1.4065,16.087 10.6885,29.977 10.6885,29.977 C10.6885,29.977 19.9685,16.09 20.4215,15.09 L20.4485,15.05 L20.4405,15.05 C21.0385,13.717 21.3775,12.244 21.3775,10.689" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

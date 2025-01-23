@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>check</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Closed-Menu" transform="translate(-12.000000, -262.000000)">
+            <g id="A-side">
+                <g id="Visitors-section" transform="translate(0.000000, 224.000000)">
+                    <g id="check" transform="translate(12.000000, 38.000000)">
+                        <circle id="Admissions-icon" fill="#6697B8" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <g id="20_3017-icon-admissions" transform="translate(6.000000, 7.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M8.76,20.08 C8.20971242,20.08 7.68710151,19.8386824 7.33,19.42 L1.18,12.12 C0.859390869,11.7444016 0.702254888,11.2562115 0.743575795,10.7641171 C0.784896702,10.2720226 1.02124441,9.81687309 1.4,9.5 C2.187696,8.83666107 3.36345668,8.93501367 4.03,9.72 L8.57,15.11 L17.29,1.76 C17.6167053,1.13739201 18.2665707,0.752226285 18.9695825,0.764536146 C19.6725942,0.776846007 20.3085768,1.18452716 20.6132845,1.8181913 C20.9179922,2.45185545 20.8393372,3.20318173 20.41,3.76 L10.32,19.24 C9.9950852,19.7318378 9.4582947,20.0428061 8.87,20.08 L8.76,20.08 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

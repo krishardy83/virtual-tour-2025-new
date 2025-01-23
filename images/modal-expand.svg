@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>orientation</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Building-(icon-2)" transform="translate(-362.000000, -303.000000)" fill="#273D5E" fill-rule="nonzero">
+            <g id="Group" transform="translate(350.000000, 295.000000)">
+                <g id="orientation" transform="translate(12.000000, 8.000000)">
+                    <polygon id="Path" points="4.2627384 24.8659586 11.8125 17.3065363 9.68116598 15.1875 2.13133402 22.7469223 2.7917781 21.2440128 2.7917781 17.2163645 0 17.1862838 0 27 9.77122334 27 9.78620945 24.2046756 5.68859966 24.2046756"></polygon>
+                    <polygon id="Path" points="17.1862838 0 17.2163645 2.7917781 21.2440128 2.7917781 22.7469223 2.13133402 15.1875 9.68116598 17.3065363 11.8125 24.8659586 4.2627384 24.2046756 5.68859966 24.2046756 9.78620945 27 9.77122334 27 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

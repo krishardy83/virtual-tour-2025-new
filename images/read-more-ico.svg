@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>read more icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0004 0.8829 18 0.8829 18 26.9999 0.0004 26.9999"></polygon>
+    </defs>
+    <g id="Option-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-icon-click" transform="translate(-908.000000, -720.000000)">
+            <g id="Read-more-button" transform="translate(863.000000, 705.000000)">
+                <g id="read-more-icon" transform="translate(45.000000, 14.000000)">
+                    <polygon id="Fill-1" fill="#FFFFFF" points="10.4418 9.5298 17.1018 9.5298 10.4418 2.1138"></polygon>
+                    <g id="Group-4" transform="translate(0.000000, 0.117600)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <path d="M8.4414,10.4119 L8.4414,0.8829 L0.0004,0.8829 L0.0004,26.9999 L18.0004,26.9999 L18.0004,11.4119 L9.4414,11.4119 C8.8884,11.4119 8.4414,10.9639 8.4414,10.4119" id="Fill-2" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

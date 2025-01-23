@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="38px" viewBox="0 0 35 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>parking</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Closed-Menu" transform="translate(-12.000000, -304.000000)">
+            <g id="A-side">
+                <g id="Visitors-section" transform="translate(0.000000, 224.000000)">
+                    <g id="parking" transform="translate(12.000000, 80.950000)">
+                        <circle id="Parking-icon" fill="#6697B8" cx="17.5" cy="18.55" r="17.5"></circle>
+                        <g transform="translate(9.510000, 0.000000)">
+                            <g id="20_3017-icon-parking" transform="translate(0.490000, 0.050000)"></g>
+                            <text id="P" fill="#FFFFFF" fill-rule="nonzero" font-family="AptiferSansCom-Regular, Aptifer Sans Com" font-size="29" font-weight="normal">
+                                <tspan x="1" y="29">P</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

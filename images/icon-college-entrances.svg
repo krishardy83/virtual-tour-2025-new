@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>college-entrance-ico</title>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Closed-Menu" transform="translate(-12.000000, -350.000000)">
+            <g id="A-side">
+                <g id="Visitors-section" transform="translate(0.000000, 224.000000)">
+                    <g id="college-entrance-ico" transform="translate(12.000000, 126.000000)">
+                        <circle id="College-entrance-icon" fill="#6697B8" cx="17.5" cy="17.5" r="17.5"></circle>
+                        <g id="20_3017-icon-college-entrance" transform="translate(6.000000, 4.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M1.09,7.43 L22,7.43 C23.12,7.43 23.3,6.33 22.4,5.87 L11.52,0.37 C11.52,0.37 1.63,5.37 0.61,5.89 C-0.41,6.41 -8.84708973e-16,7.43 1.09,7.43 Z" id="Path"></path>
+                            <rect id="Rectangle" x="3.06" y="10.63" width="3.22" height="6.95"></rect>
+                            <rect id="Rectangle" x="9.93" y="10.63" width="3.22" height="6.95"></rect>
+                            <rect id="Rectangle" x="16.8" y="10.63" width="3.22" height="6.95"></rect>
+                            <rect id="Rectangle" x="0.77" y="20.78" width="21.53" height="2.16"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
