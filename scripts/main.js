@@ -261,15 +261,11 @@ $(document).ready(function(){
   let getStop = getURLParameter(stopURLParam);
   let getHighlight = getURLParameter(highlightURLParam);
 
-  let url =  "https://www.messiah.edu/site/a/api/directoriesByCategoryJSONP.php?apiKey=a38737a6a302f5f0390169114b6640a6&directoryID=21&categoryID=-1&callback=directory_data";
+  let url = "https://cascade-prod.messiah.edu/campus-map/_data/virtual-tour.json";
   $.ajax({
     url: url,
-    dataType: 'jsonp',
-    jsonpCallback: 'directory_data',
-    jsonp: 'callback',
     success: function (data) {
-
-      data.forEach((locationRaw)=>{
+      data.directory_data.forEach((locationRaw)=>{
         if(locationRaw.live === "1") {
           const coords = locationRaw.stop_location.split(",").map(val=>+val);
           const position = new google.maps.LatLng(...coords);
