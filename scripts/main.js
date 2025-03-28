@@ -15,7 +15,7 @@ let categories = {};
 let categoriesByOrder = []; // string[]
 let locationsByOrder = []; // string[]
 let categoryFilters = []; // string[]
-const IMAGE_PATH = 'http://www.messiah.edu/images/';
+const IMAGE_PATH = '';
 
 const filtersURLParam = "filters";
 const stopURLParam = "stop";
