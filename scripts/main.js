@@ -481,7 +481,7 @@ function initMap() {
       }
 
       return ['./tiles/',
-        zoom, '/tile_', coord.x, 'x', coord.y, '.png'].join('');
+        zoom, '/tile_', coord.x, 'x', coord.y, '.webp'].join('');
     },
     tileSize: new google.maps.Size(256, 256)
   });
